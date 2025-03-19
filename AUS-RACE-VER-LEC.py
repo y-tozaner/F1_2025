@@ -24,9 +24,7 @@ lec_nGear = lec_car_data['nGear']
 fig = plt.figure()
 gs = fig.add_gridspec(3, hspace=0) #Defining the number, the spacing and the config of subplots
 axs = gs.subplots(sharex=True, sharey=False) #Defining the shared x-axis of the plots
-rbr_color = fastf1.plotting.get_team_color(ver_lap['Team'], session=session)
-fer_color = fastf1.plotting.get_team_color(lec_lap['Team'], session=session)
-#
+
 fig.suptitle('2025 Australian GP Race Verstappen- Leclerc Fastest Lap')
 axs[0].plot (ver_car_data['Distance'], ver_vCar, color='#0055ffff')
 axs[0].plot (lec_car_data['Distance'], lec_vCar, color='#E21B4D')
